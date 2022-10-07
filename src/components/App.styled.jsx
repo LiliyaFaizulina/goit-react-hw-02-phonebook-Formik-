@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: 30px auto;
-    width: 400px;
+    padding: 30px 40px;
+    width: 480px;
+    background-color: ${p => p.theme.colors.pink};
+    border-radius: 6px;
 `;
 
 export const Head = styled.h1`

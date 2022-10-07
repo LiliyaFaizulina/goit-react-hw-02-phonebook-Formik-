@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: ${p=>p.theme.colors.pink};
+  background: linear-gradient(${p => p.theme.colors.bodyBg}, ${p => p.theme.colors.darkBlue}, ${p => p.theme.colors.bodyBg});
 }
 
 ul{
