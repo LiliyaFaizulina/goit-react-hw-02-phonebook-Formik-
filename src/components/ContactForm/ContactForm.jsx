@@ -20,7 +20,7 @@ const schema = yup.object().shape({
 
 export const ContactForm=({updateContactList, contactList})=>{
 
-    const addContact = (values, {resetForm, submitForm, validateField, validateForm}) => {
+    const addContact = (values, {resetForm}) => {
         const normalizedName = values.name.toLowerCase();
         
         if (contactList.some(contact => contact.name.toLowerCase() === normalizedName)) {
